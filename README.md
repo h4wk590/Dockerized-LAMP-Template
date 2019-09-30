@@ -1,18 +1,19 @@
-# Should be working out of box.
+# Dockerized php/httpd/sql
 
-Use 
 
-```
+# configure the volumes in docker-compose.yml
 
-docker-compose build 
+you'll have to change the path to whatever your working directory path is after ```volumes:```.
 
-```
-to build the image.
+Do ```docker-compose build``` to build the image.
 
-you can you ```docker-compose up -d``` to run the container in the terminal background.
+you can use ```docker-compose up -d``` to run the container in the terminal background.
 
-```docker-compose ps -a``` to view images
+```docker ps -a``` to view active containers
 
-```docker-compose -it < container id > bash``` to go into the container.
+The Apache image & php image both use their own dockerfiles.
 
-the php & apache images have their own dockerfiles. 
+## The apache.conf serves the content to port 80, but this can be changed to any port very easily to avoid conflicts with the host port 80. 
+
+Using the Alpine-Linux images was faster than any other for some reason.
+
