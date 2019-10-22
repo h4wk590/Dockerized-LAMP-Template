@@ -19,4 +19,3 @@ Using the Alpine-Linux images was faster than any other for some reason.
 
 ```networks, frontend, and backend``` specify the containers to run together. This way I can refer to them using the container ids/names instead of digging around for ip addresses. Docker does this automagically.
 
-Haven't tested the mysql.
