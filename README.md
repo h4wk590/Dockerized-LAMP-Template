@@ -15,7 +15,7 @@ The Apache image & php image both use their own dockerfiles.
 
 ## The apache.conf serves the content to port 80, but this can be changed to any port very easily to avoid conflicts with the host port 80. 
 
-Using the Alpine-Linux images was faster than any other for some reason.
+Using the Alpine-Linux images was faster.
 
 ```networks, frontend, and backend``` specify the containers to run together. This way I can refer to them using the container ids/names instead of digging around for ip addresses. Docker does this automagically.
 
