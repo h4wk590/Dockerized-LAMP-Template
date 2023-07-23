@@ -1,5 +1,11 @@
 # Dockerized php/httpd/sql
 
+## This was created to aid an in-class lab
+
+I created this to help other students utlize multiple environments for development during class.
+It was utilized by the instructor and provided extra marks for other projects being able to 
+'dockerize' applications/dev environments.
+
 
 # configure the volumes in docker-compose.yml
 
